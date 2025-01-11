@@ -1,0 +1,8 @@
+pyinstaller --clean --onefile --name Natillera --icon=src/assets/icono.png --add-data "src;src" main.py
+
+
+pyinstaller --clean --onefile --name Natillera --add-data "src;src" --icon=src/assets/icono.png --hidden-import tkinter.filedialog --hidden-import reportlab --hidden-import reportlab.lib --hidden-import reportlab.pdfbase --hidden-import reportlab.pdfgen --hidden-import reportlab.platypus main.py
+
+pyinstaller --clean --onefile --name Natillera --add-data "src;src" --icon=src/assets/icono.png --hidden-import tkinter.filedialog --hidden-import reportlab --hidden-import reportlab.lib --hidden-import reportlab.pdfbase --hidden-import reportlab.pdfgen --hidden-import reportlab.platypus --hidden-import tkcalendar main.py
+
+pyinstaller --clean --onefile --name Natillera --add-data "src;src" --icon=src/assets/icono.png --hidden-import tkinter.filedialog --hidden-import reportlab --hidden-import reportlab.lib --hidden-import reportlab.pdfbase --hidden-import reportlab.pdfgen --hidden-import reportlab.platypus --hidden-import tkcalendar --hidden-import babel --hidden-import babel.core --hidden-import babel.numbers --hidden-import babel.dates main.py
